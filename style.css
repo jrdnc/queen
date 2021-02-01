@@ -2,6 +2,9 @@
 p {
     text-align: center;
 }
+body {
+    
+}
 
 .queen {
     display: flex;
@@ -22,17 +25,29 @@ p {
 
 }
 
-/* --------------------- EYE --------------------- */
+/* --------------------- EYE ---------------------*/
 .right-eye{
     position: relative;
     width: 3.5rem;
     height: 3.5rem;
-    background-color: yellow;
+    background-color: white;
     top: 7.75rem;
     left: 9.5rem;
     border-radius: 100% 0px;
     transform: rotate(30deg); 
 
+}
+.eye-lid {
+    position: absolute;
+    width: 142%;
+    height: 110%;
+    top: .2rem;
+    border-left: 20px;
+    border-radius: 50%;
+    border-bottom: .5rem solid black;
+    box-shadow: 0 15px 0 0 #644539;
+    /* box-shadow: 0 15px 0 0 #5B3C31; */
+    transform: rotate(132deg);
 }
 
 .iris {
