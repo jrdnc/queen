@@ -25,13 +25,37 @@ body {
 
 }
 
+/* --------------------- HAIR --------------------- */
+.hair {
+    position: relative;
+    top: 0;
+}
+
+.wave1 {
+    position: absolute;
+    margin: 0 auto;
+    width: 5rem;
+    height: 15rem;
+    transform: rotate(20deg);
+    background: black;
+}
+
+.wave2 {
+    position: absolute center;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    background: black;
+}
+
 /* --------------------- EYE --------------------- */
 .right-eye{
     position: relative;
     width: 3.5rem;
     height: 3.5rem;
     background-color: white;
-    top: 7.75rem;
+    /* top: 7.75rem; */
+    top: 1.75rem;
     left: 9.5rem;
     border-radius: 100% 0px;
     transform: rotate(30deg); 
@@ -68,27 +92,44 @@ body {
 }
 
 /* --------------------- NOSE --------------------- */
+.nose {
+    position: relative;
+    margin: auto;
+    height: 1.6rem;
+    width: 2.2rem;
+    top: 2rem;
+    /* background-color: black; */
+    box-shadow: 0 -.1rem 0 0 #493027;
+
+    border-radius: 50%;
+}
 
 /* --------------------- MOUTH --------------------- */
+.mouth {
+    position: relative;
+    top: 3rem;
+}
+
 .top-lip {
-
-}
-
-
-/* --------------------- HAIR --------------------- */
-/* .wave1 {
     position: absolute;
-    margin: 0 auto;
-    width: 5rem;
-    height: 15rem;
-    transform: rotate(20deg);
-    background: black;
+    width: 2rem;
+    height: 2rem;
+    left: 5.6rem;
+    background: rgb(116, 3, 3);
+    border-style: none;
+    border-radius: 0 80% 50% 80%;
+    transform: rotate(-40deg);
+    margin-top: 20px;
 }
 
-.wave2 {
-    position: absolute center;
-    margin: 0 auto;
-    width: 100px;
-    height: 100px;
-    background: black;
-} */
+.bottom-lip {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    left: 7.4rem;
+    background: rgb(116, 3, 3);
+    border-style: none;
+    border-radius: 0 80% 50% 80%;
+    transform: rotate(40deg) scale(-1, 1);
+    margin-top: 20px;
+}
