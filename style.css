@@ -225,7 +225,8 @@ p {
     /* top: 2rem; */
     top: 2.5rem;
     /* background-color: black; */
-    box-shadow: 0 -.1rem 0 0 #493027;
+    box-shadow: 0 -.1rem 0 0 #3b241c;
+    /* box-shadow: 0 -.1rem 0 0 #493027; */
     border-radius: 50%;
 }
 
@@ -233,6 +234,12 @@ p {
 .mouth { /* adjust mouth height here */
     position: relative;
     top: 2rem;
+}
+
+.lip {
+    background: rgb(116, 3, 3);
+    position: absolute;
+
 }
 
 .inner-mouth {
@@ -244,14 +251,14 @@ p {
     overflow: hidden;
     z-index: 1;
 }
-.inner-mouth::before {
+/* .inner-mouth::before {
     display: block;
     content: '';
     height: 1rem;
     width: 3rem;
     background: black;
     border-radius: 50%;
-}
+} */
 
 .inner-mouth::after {
     display: block;
@@ -262,38 +269,31 @@ p {
     border-radius: 50%;
 }
 
-.top-lip-left {
-    position: absolute;
+.top {
     width: 2rem;
     height: 2rem;
-    left: 5.6rem;
-    background: rgb(116, 3, 3);
     border-style: none;
+    margin-top: 20px;
+}
+
+.top.left {
+    left: 5.6rem;
     border-radius: 0 80% 50% 80%;
     transform: rotate(-40deg);
-    margin-top: 20px;
 }
 
-.top-lip-right {
-    position: absolute;
-    width: 2rem;
-    height: 2rem;
+.top.right {
     left: 7.4rem;
-    background: rgb(116, 3, 3);
-    border-style: none;
     border-radius: 0 80% 50% 80%;
     transform: rotate(40deg) scale(-1, 1);
-    margin-top: 20px;
 }
 
-.bottom-lip {
+.bottom.lip {
     position: relative;
     top: 1.6rem;
     width: 4rem;
     height: 1.8rem;
-    /* height: 2rem; */
     margin: 0 auto;
-    background: rgb(116, 3, 3);
     /* background: rgb(136, 5, 5); */
     border-radius: 4rem / 2rem;
     z-index: -1;
