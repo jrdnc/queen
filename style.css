@@ -15,36 +15,158 @@ p {
     margin: auto;
     width: 15rem;
     height: 19.5rem;
-    background: #5B3C31;
+    background: #502c1f;
+    /* background: #5B3C31; */
     border-radius: 50%;
     z-index: -1;
 
 }
-
-/* --------------------- HAIR --------------------- */
+   
+/********************** HAIR **********************/
 .hair {
     position: relative;
-    top: 0;
+    height: 6.2rem;
 }
 
-.wave1 {
+.curl, .wave{
     position: absolute;
-    margin: 0 auto;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.w1 {
+    position: absolute;
+    /* margin: 0 auto; */
+    top: -3rem;
+    left: .5rem;
     width: 5rem;
     height: 15rem;
-    transform: rotate(20deg);
-    background: black;
+    border-radius: 50%;
+    transform: rotate(60deg);
+    /* background: pink; */
 }
 
-.wave2 {
+.w2 {
+    position: absolute;
+    margin: 0 auto;
+    top: -1rem;
+    left: -1rem;
+    width: 5rem;
+    height: 15rem;
+    transform: rotate(26deg);
+    /* background: blue; */
+}
+
+.w3 {
     position: absolute center;
     margin: 0 auto;
-    width: 100px;
-    height: 100px;
-    background: black;
+    width: 12rem;
+    height: 5rem;
+    top: -1rem;
+    left: -3rem;
+    transform: rotate(-12deg);
+    /* background-color: pink; */
+    z-index: 2;
 }
 
-/* --------------------- EYE --------------------- */
+.big {
+    height: 5rem;
+    width: 5rem;
+}
+
+.medium {
+    height: 3rem;
+    width: 3rem;
+}
+
+.little {
+    height: 2rem;
+    width: 2rem;
+}
+
+
+.bc1 {
+    top: 4.5rem;
+    left: 3rem;
+
+}
+
+.bc2 {
+    top: 7rem;
+    left: .7rem;
+    /* background-color: blueviolet; */
+}
+
+.bc3 {
+    top: 10rem;
+    left: .5rem;
+    /* background-color: blueviolet; */
+}
+
+.bc4 {
+    top: 13rem;
+    /* top: 14rem; */
+    left: -1rem;
+    /* background-color: blueviolet; */
+}
+
+.bc5 {
+    top: 9rem;
+    left: -5rem;
+    /* background-color: blueviolet; */
+}
+
+.mc1 {
+    top: 15.5rem;
+    left: 2.5rem;
+    /* background-color: burlywood; */
+}
+
+.mc2 {
+    top: 17rem;
+    left: 1.5rem;
+    /* background-color: burlywood; */
+}
+
+.mc3 {
+    top: 12rem;
+    left: -2rem;
+    /* background-color: burlywood; */
+}
+
+.lc1 {
+    top: 8rem;
+    left: 5rem;
+    /* background-color: blueviolet; */
+}
+
+.lc2 {
+    top: 14rem;
+    left: 3rem;
+    /* background-color: blueviolet; */
+}
+
+.lc3 {
+    top: 17rem;
+    left: 1rem;
+    /* background-color: blueviolet; */
+}
+
+.lc4 {
+    top: 17.8rem;
+    left: 3.7rem;
+    /* background-color: blueviolet; */
+}
+
+.lc5 {
+    top: 18.8rem;
+    left: 3.2rem;
+    /* background-color: blueviolet; */
+}
+
+
+
+/********************** EYE **********************/
 .right-eye{
     position: relative;
     width: 3.5rem;
@@ -62,11 +184,12 @@ p {
     width: 142%;
     height: 110%;
     top: .2rem;
-    border-left: 20px;
+    /* border-left: 20px; */
     border-radius: 50%;
     border-bottom: .5rem solid black;
-    border-color: #5B3C31 #5B3C31 black #5B3C31;
-    box-shadow: 0 15px 0 0 #644539;
+    /* border-color: #5B3C31 #5B3C31 black #5B3C31; */
+    /* box-shadow: 0 15px 0 0 #644539; */
+    box-shadow: 0 .9rem 0 0 #573123;
     /* box-shadow: 0 15px 0 0 #5B3C31;*/
     transform: rotate(132deg);
 }
@@ -74,33 +197,39 @@ p {
 .iris {
     display: flex;
     align-items: center;
-    height: 3rem;
-    width: 3rem;
+    /* height: 3rem;
+    width: 3rem; */
+
+    height: 86%;
+    width: 86%;
     background-color: #260E06;
     border-radius: 50%;
 }
 
 .pupil {
     margin: auto;
-    height: 1.6rem;
-    width: 1.6rem;
+    height: 54%;
+    width: 54%;
+    /* height: 1.6rem;
+    width: 1.6rem; */
     background-color: black;
     border-radius: 50%;
 }
 
-/* --------------------- NOSE --------------------- */
+/********************** NOSE **********************/
 .nose {
     position: relative;
     margin: auto;
     height: 1.6rem;
     width: 2.2rem;
-    top: 2rem;
+    /* top: 2rem; */
+    top: 2.5rem;
     /* background-color: black; */
     box-shadow: 0 -.1rem 0 0 #493027;
     border-radius: 50%;
 }
 
-/* --------------------- MOUTH --------------------- */
+/********************** MOUTH **********************/
 .mouth { /* adjust mouth height here */
     position: relative;
     top: 2rem;
@@ -113,7 +242,6 @@ p {
     width: 3rem;
     top: 2.5rem;
     overflow: hidden;
-    /* transform: scale(1, -1); */
     z-index: 1;
 }
 .inner-mouth::before {
