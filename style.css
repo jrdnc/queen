@@ -53,7 +53,7 @@ p {
     left: -1rem;
     width: 5rem;
     height: 15rem;
-    transform: rotate(26deg);
+    transform: rotate(23deg);
     /* background: blue; */
 }
 
@@ -202,7 +202,9 @@ p {
 
     height: 86%;
     width: 86%;
-    background-color: #260E06;
+    background: radial-gradient(closest-side, #000000, #260E06 75%, #260E06 80%, #130703);
+    /* background: radial-gradient(closest-side, #000000, #260E06 80%, #130703); */
+    /* background-color: #260E06; */
     border-radius: 50%;
 }
 
@@ -274,7 +276,7 @@ p {
     height: 2rem;
     border-style: none;
     margin-top: 20px;
-    /* border-top: .15rem solid rgb(114, 1, 1); */
+    /* border-top: .15rem solid rgb(80, 2, 2); */
     /* box-shadow: .3rem -1rem 0 0 black; */
 }
 
@@ -296,8 +298,7 @@ p {
     width: 4rem;
     height: 1.8rem;
     margin: 0 auto;
-    /* background: rgb(136, 5, 5); */
     border-radius: 4rem / 2rem;
-    /* border-bottom: .1rem solid rgb(114, 1, 1); */
+    /* border-bottom: .15rem solid rgb(80, 2, 2); */
     z-index: -1;
 }
