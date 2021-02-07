@@ -17,7 +17,7 @@ p {
     height: 19.5rem;
     background: #502c1f;
     /* background: #5B3C31; */
-    border-radius: 50%;
+    border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
     z-index: -1;
 
 }
