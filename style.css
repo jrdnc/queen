@@ -1,3 +1,12 @@
+html {
+    /* font-size: 30px; */
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+}
+
 p {
     text-align: center;
 }
@@ -6,13 +15,13 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 30% 0;
-    /* position: relative center; */
+    width: 100%;
+    height: 100%;
 }
 
 .head {
     position: relative center;
-    margin: auto;
+    margin: 0 auto;
     width: 15rem;
     height: 19.5rem;
     background: #502c1f;
@@ -25,142 +34,213 @@ p {
 /********************** HAIR **********************/
 .hair {
     position: relative;
-    height: 6.2rem;
+    height: 6.2em;
+    z-index: 1;
 }
 
 .curl, .wave{
     position: absolute;
     background-color: black;
     border-radius: 50%;
+    z-index: 1;
+}
+
+.curl {
+    box-shadow: 0 .1em 0 0 rgb(29, 29, 29);
+}
+
+.wave {
+    width: 80%;
+    height: 81%;
+
 }
 
 .w1 {
     position: absolute;
-    /* margin: 0 auto; */
-    top: -3rem;
-    left: .5rem;
-    width: 5rem;
-    height: 15rem;
+    top: 32%;
+    left: -30%;
+    width: 100%;
     border-radius: 50%;
-    transform: rotate(60deg);
+    transform: rotate(-30deg);
     /* background: pink; */
 }
 
 .w2 {
     position: absolute;
-    margin: 0 auto;
-    top: -1rem;
-    left: -1rem;
-    width: 5rem;
-    height: 15rem;
-    transform: rotate(23deg);
+    top: 70%;
+    left: -40%;
+    width: 100%;
+    transform: rotate(-70deg);
     /* background: blue; */
+    z-index: 3; /*delete*/
 }
 
 .w3 {
-    position: absolute center;
-    margin: 0 auto;
-    width: 12rem;
-    height: 5rem;
-    top: -1rem;
-    left: -3rem;
+    position: absolute;
+    top: -16%;
+    left: -20%;
     transform: rotate(-12deg);
     /* background-color: pink; */
-    z-index: 2;
+}
+
+.w4 {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    transform: rotate(230deg);
+    /* background-color: green; */
+}
+
+.w5 {
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    transform: rotate(30deg);
+    /* background-color: green; */
+}
+
+.w6 {
+    position: absolute;
+    top: -45%;
+    left: 45%;
+    /* width: 60%; */
+    transform: rotate(160deg);
+    /* background-color: purple; */
+}
+
+.w7 {
+    position: absolute;
+    top: -50%;
+    left: -10%;
+    transform: rotate(20deg);
+    /* background-color: green; */
+}
+
+.w8 {
+    position: absolute;
+    top: 100%;
+    left: 60%;
+    transform: rotate(80deg);
+    /* background-color: purple; */
+}
+
+.w9 {
+    position: absolute;
+    top: 160%;
+    left: 80%;
+    transform: rotate(140deg);
+    /* background-color: purple; */
+}
+
+.w10 {
+    position: absolute;
+    top: 90%;
+    left: 100%;
+    transform: rotate(80deg);
+    /* background-color: purple; */
+}
+
+.w11 {
+    position: absolute;
+    top: 130%;
+    left: -60%;
+    transform: rotate(70deg);
+    /* background-color: purple; */
+    z-index: 3; /*delete*/
 }
 
 .big {
-    height: 5rem;
-    width: 5rem;
+    height: 5em;
+    width: 5em;
 }
 
 .medium {
-    height: 3rem;
-    width: 3rem;
+    height: 3em;
+    width: 3em;
 }
 
 .little {
-    height: 2rem;
-    width: 2rem;
+    height: 2em;
+    width: 2em;
 }
 
 
 .bc1 {
-    top: 4.5rem;
-    left: 3rem;
+    top: 4.5em;
+    left: 3em;
 
 }
 
 .bc2 {
-    top: 7rem;
-    left: .7rem;
+    top: 7em;
+    left: .7em;
     /* background-color: blueviolet; */
 }
 
 .bc3 {
-    top: 10rem;
-    left: .5rem;
+    top: 10em;
+    left: .5em;
     /* background-color: blueviolet; */
 }
 
 .bc4 {
-    top: 13rem;
-    /* top: 14rem; */
-    left: -1rem;
+    top: 13em;
+    /* top: 14em; */
+    left: -1em;
     /* background-color: blueviolet; */
 }
 
 .bc5 {
-    top: 9rem;
-    left: -5rem;
+    top: 9em;
+    left: -5em;
     /* background-color: blueviolet; */
 }
 
 .mc1 {
-    top: 15.5rem;
-    left: 2.5rem;
+    top: 15.5em;
+    left: 2.5em;
     /* background-color: burlywood; */
 }
 
 .mc2 {
-    top: 17rem;
-    left: 1.5rem;
+    top: 17em;
+    left: 1.5em;
     /* background-color: burlywood; */
 }
 
 .mc3 {
-    top: 12rem;
-    left: -2rem;
+    top: 12em;
+    left: -2em;
     /* background-color: burlywood; */
 }
 
 .lc1 {
-    top: 8rem;
-    left: 5rem;
+    top: 8em;
+    left: 5em;
     /* background-color: blueviolet; */
 }
 
 .lc2 {
-    top: 14rem;
-    left: 3rem;
+    top: 14em;
+    left: 3em;
     /* background-color: blueviolet; */
 }
 
 .lc3 {
-    top: 17rem;
-    left: 1rem;
+    top: 17em;
+    left: 1em;
     /* background-color: blueviolet; */
 }
 
 .lc4 {
-    top: 17.8rem;
-    left: 3.7rem;
+    top: 17.8em;
+    left: 3.7em;
     /* background-color: blueviolet; */
 }
 
 .lc5 {
-    top: 18.8rem;
-    left: 3.2rem;
+    top: 18.8em;
+    left: 3.2em;
     /* background-color: blueviolet; */
 }
 
@@ -169,12 +249,12 @@ p {
 /********************** EYE **********************/
 .right-eye{
     position: relative;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3.5em;
+    height: 3.5em;
     background-color: white;
-    /* top: 7.75rem; */
-    top: 1.75rem;
-    left: 9.5rem;
+    /* top: 7.75em; */
+    top: 1.75em;
+    left: 9.5em;
     border-radius: 100% 0px;
     transform: rotate(30deg); 
 
@@ -183,13 +263,13 @@ p {
     position: absolute;
     width: 142%;
     height: 110%;
-    top: .2rem;
+    top: .2em;
     /* border-left: 20px; */
     border-radius: 50%;
-    border-bottom: .5rem solid black;
+    border-bottom: .5em solid black;
     /* border-color: #5B3C31 #5B3C31 black #5B3C31; */
     /* box-shadow: 0 15px 0 0 #644539; */
-    box-shadow: 0 .9rem 0 0 #573123;
+    box-shadow: 0 .9em 0 0 #573123;
     /* box-shadow: 0 15px 0 0 #5B3C31;*/
     transform: rotate(132deg);
 }
@@ -197,8 +277,8 @@ p {
 .iris {
     display: flex;
     align-items: center;
-    /* height: 3rem;
-    width: 3rem; */
+    /* height: 3em;
+    width: 3em; */
 
     height: 86%;
     width: 86%;
@@ -212,8 +292,8 @@ p {
     margin: auto;
     height: 54%;
     width: 54%;
-    /* height: 1.6rem;
-    width: 1.6rem; */
+    /* height: 1.6em;
+    width: 1.6em; */
     background-color: black;
     border-radius: 50%;
 }
@@ -222,20 +302,21 @@ p {
 .nose {
     position: relative;
     margin: auto;
-    height: 1.6rem;
-    width: 2.2rem;
-    /* top: 2rem; */
-    top: 2.5rem;
+    height: 1.6em;
+    width: 2.2em;
+    /* top: 2em; */
+    top: 3em;
     /* background-color: black; */
-    box-shadow: 0 -.1rem 0 0 #3b241c;
-    /* box-shadow: 0 -.1rem 0 0 #493027; */
+    box-shadow: 0 -.1em 0 0 #3b241c;
+    /* box-shadow: 0 -.1em 0 0 #493027; */
     border-radius: 50%;
 }
 
 /********************** MOUTH **********************/
 .mouth { /* adjust mouth height here */
     position: relative;
-    top: 2rem;
+    top: 12%;
+    /* top: 2em; */
 }
 
 .lip {
@@ -243,62 +324,61 @@ p {
 
 }
 
-.inner-mouth {
+.inner {
     position: relative;
     margin: 0 auto;
-    height: .1rem;
-    width: 3rem;
-    top: 2.5rem;
+    height: .1em;
+    width: 3em;
+    top: 2.5em;
     overflow: hidden;
     z-index: 1;
 }
 /* .inner-mouth::before {
     display: block;
     content: '';
-    height: 1rem;
-    width: 3rem;
+    height: 1em;
+    width: 3em;
     background: black;
     border-radius: 50%;
 } */
 
-.inner-mouth::after {
+.inner::after {
     display: block;
     content: '';
-    height: 1rem;
-    width: 3rem;
+    height: 1em;
+    width: 3em;
     background: black;
     border-radius: 50%;
 }
 
 .top {
     position: absolute;
-    width: 2rem;
-    height: 2rem;
+    width: 2em;
+    height: 2em;
     border-style: none;
     margin-top: 20px;
-    /* border-top: .15rem solid rgb(80, 2, 2); */
-    /* box-shadow: .3rem -1rem 0 0 black; */
+    /* border-top: .15em solid rgb(80, 2, 2); */
+    /* box-shadow: .3em -1em 0 0 black; */
 }
 
 .top.left {
-    left: 5.6rem;
+    left: 5.6em;
     border-radius: 0 80% 50% 80%;
     transform: rotate(-40deg);
 }
 
 .top.right {
-    left: 7.4rem;
+    left: 7.4em;
     border-radius: 0 80% 50% 80%;
     transform: rotate(40deg) scale(-1, 1);
 }
 
 .bottom.lip {
     position: relative;
-    top: 1.6rem;
-    width: 4rem;
-    height: 1.8rem;
+    top: 1.6em;
+    width: 4em;
+    height: 1.8em;
     margin: 0 auto;
-    border-radius: 4rem / 2rem;
-    /* border-bottom: .15rem solid rgb(80, 2, 2); */
-    z-index: -1;
+    border-radius: 4em / 2em;
+    /* border-bottom: .15em solid rgb(80, 2, 2); */
 }
